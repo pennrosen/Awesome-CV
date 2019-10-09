@@ -336,6 +336,7 @@
 % Usage: \recipient{<recipient name>}{<recipient address>}
 % Usage: \recipientname{<recipient name>}
 % Usage: \recipientaddress{<recipient address>}
+% \newcommand*{\recipient}[1]{\def\@recipientname{#1}}
 \newcommand*{\recipient}[2]{\def\@recipientname{#1}\def\@recipientaddress{#2}}
 \newcommand*{\recipientname}[1]{\def\@recipientname{#1}}
 \newcommand*{\recipientaddress}[1]{\def\@recipientaddress{#1}}
@@ -364,6 +365,14 @@
   \ifthenelse{\equal{#1}{}}{}{\def\@letterenclname{#1}}
   \def\@letterenclosure{#2}
 }
+
+% Defines the company name (cover letter only)
+% Usage: \companyname{<message>}
+% \newcommand*{\companyname}[1]{\def\@companyname{#1}}
+
+% Defines the job title (cover letter only)
+% Usage: \jobtitle{<message>}
+% \newcommand*{\jobtitle}[1]{\def\@jobtitle{#1}}
 
 
 %-------------------------------------------------------------------------------

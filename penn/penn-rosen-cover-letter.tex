@@ -76,18 +76,22 @@
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
+% The name of the company
+\newcommand{\companyname}{CompanyName}
+% The job title
+\newcommand{\jobtitle}{JobTitle}
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+  {\companyname{} Recruitment Team}
+  {Job application for \jobtitle{}}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer}
+% \lettertitle{Job Application for Software Engineer}
 % How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
+\letteropening{Dear \companyname{},}
 % How the letter is closed
-\letterclosing{I will be happy to provide references upon request. Please feel free to contact me by by phone or email.\\\\Many thanks for your time. I hope to hear from you soon.\\\\Kindest Regards,}
+\letterclosing{Kindest Regards,}
 % Any enclosures with the letter
 \letterenclosure[Attached]{Resume}
 
@@ -115,19 +119,28 @@
 \begin{cvletter}
 
 \lettersection{About Me}
-Hello! My name is Penn Rosen.
+Hello! My name is Penn.
 
-I am a New York City-based Software Engineer with a passion for good design, clean code, and usable interfaces.
+I'm a New York City-based Software Engineer with a passion for clean code, good design, and useable interfaces.
 
-At Saks Fifth Avenue, I build interactive special projects with a strong focus on user experience, animation, and accessibility. We are currently in the process of migrating from Angular to React - a clear-sighted initiative, in my opinion.
-
-\lettersection{Why you?}
-I found the posting for \href{http://www.nytco.com/careers/technology/front-end-developer-nyt-cooking-team}{``Front End Developer, NYT Cooking Team''} and immediately recognized a great fit.
+\lettersection{Why You?}
+[brief description of admirable company values, notable successes]
 
 \lettersection{Why Me?}
-Relevant to the position is my recent newsroom experience at The Guardian. As a solo dev, I built an extended feature for \href{https://www.theguardian.com/tour-tracker}{a high-profile Amazon web series}.
+% \underline{\href{https://www.example.com}{Your job posting for Software Engineer}} sounds like a great fit.
 
-Outside of the web, my main interest is in the kitchen. I cook often. I frequently pull recipes from the NYT Cooking site --- the \href{https://cooking.nytimes.com/recipes/11376-no-knead-bread}{recipe for No-Knead Bread} is a true classic and a personal go-to.
+At my day job at Saks Fifth Avenue, I build interactive projects with a strong focus on user experience, animation, and accessibility.
+
+Relevant to the position is my recent experience [doing X]. 
+
+% at The Guardian. As a solo dev, I built an extended feature for a high-profile Amazon web series. [https://www.theguardian.com/tour-tracker]
+
+% Outside of the web, I enjoy cooking, live music, and dogs.
+% \\\\
+\lettersection{Thanks!}
+I will be happy to provide references upon request. Please feel free to contact me by email or phone (802.851.9576).
+
+Many thanks for your time. I hope to hear from you soon! 
 
 \end{cvletter}
 
